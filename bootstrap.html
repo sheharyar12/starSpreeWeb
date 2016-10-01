@@ -9,6 +9,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
       
     <style type="text/css">
         
@@ -16,27 +18,47 @@
             width:100%;
         }    
         
+        #appSummary{
+            text-align:center;
+            margin-top: 40px;
+            margin-bottom: 5px;
+        }
         
+        #appstoreicon{
+            width: 50%;
+        }
+        
+        #footer{
+            background-color: yellow;
+            padding-top:200px;
+            margin-top: 100px;
+            text-align: center; 
+            padding-bottom: 200px;
+        }
+        
+        body{
+            position:relative;
+        }
         
     </style>
       
       
   </head>
     
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="200">
 
 
-          <nav class="navbar navbar-light " style="background-color: #e3f2fd;">
+          <nav class="navbar navbar-light navbar-fixed-top" id="navbar" style="background-color: #e3f2fd;">
               <a class="navbar-brand" href="bootstrap.html">Star Spree</a>
                 <ul class="nav navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="bootstrap.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="About.html">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Download.html">Download</a>
+                        <a class="nav-link" href="#footer">Download</a>
                     </li>
                 </ul>
             <form class="form-inline pull-xs-right">
@@ -67,6 +89,15 @@
             </form>
         </div>
       
+      
+
+      <div class="container" id="about">
+          <div class="row" id="appSummary">
+          <h1 style="text-align: center">Want to know more about the app?</h1>
+          <p class="lead">Star Spree is a never ending game where you try to beat anyones or even your top score. This is a simple game where you just tap to fly the star and dodge objects</p>
+          </div>
+ 
+      </div>
       
       <div class="jumbotron verticle-center" style="background:transparent !important">
           <div class="container">
@@ -99,26 +130,26 @@
       <div class="card-deck-wrapper">
   <div class="card-deck">
     <div class="card">
-      <img class="card-img-top" src="android.jpg" alt="Card image cap">
+      <img class="card-img-top" src="http://wpdatatables.com/wp-content/uploads/2014/09/beta_icon.png" alt="Card image cap">
       <div class="card-block">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h4 class="card-title"><i class="fa fa-tasks" aria-hidden="true"></i>Version</h4>
+        <p class="card-text">Star Spree is in its Beta Stage version .02 Beta</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="android.jpg" alt="Card image cap">
+      <img class="card-img-top" src="https://pbs.twimg.com/profile_images/717080514931376129/hfhzm06Q.jpg" alt="Card image cap">
       <div class="card-block">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <h4 class="card-title">Google Play</h4>
+        <p class="card-text">Visit google play today for similar games like Star Spree</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="android.jpg" alt="Card image cap">
+      <img class="card-img-top" src="http://www.indomagic.com/wp-content/uploads/Reviews.png" alt="Card image cap">
       <div class="card-block">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <h4 class="card-title">Reviews</h4>
+        <p class="card-text">Check out Reviews</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
     </div>
@@ -127,6 +158,17 @@
       </div>
       
 
+      <div id="footer">
+      <div class="row">
+          
+          <h2>Download the app!</h2>
+          <p class = "lead">Really, why should I download this app???</p>
+          <a href="https://play.google.com/store/apps/details?id=com.sheharyar.StarSpree&hl=en"><img id="appstoreicon" src="http://www.nkhome.com/content-img/GooglePlay.png">
+          
+              </div>
+      
+      
+      </div>
     
       
       
